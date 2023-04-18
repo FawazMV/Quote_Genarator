@@ -4,7 +4,6 @@ import BookmarkCards from './Components/BookmarkCards'
 
 const BookMarks = () => {
   const { quotes } = useSelector((state) => state.bookmark)
-  console.log(quotes)
   return (
     <>
       <div className='grid place-items-center  py-5 px-5 sm:px-10'>
