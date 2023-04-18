@@ -18,7 +18,7 @@ const QuoteDiv = ({ content, author, id }) => {
     return (
         <div className='w-screen flex justify-center py-5 px-5 sm:px-10'>
             {content ?
-                <div className='min-h-[200px] text-gray-50 py-3 px-5 md:px-14 bg-[#d05252] w-full md:w-[600px] rounded-xl flex justify-center flex-col'>
+                <div className='min-h-[150px] text-gray-50 py-3 px-5 md:px-14 bg-[#d05252] w-full md:w-[600px] rounded-xl flex justify-center flex-col'>
                     <p className='break-words my-3 flex-grow text-xl font-sans tracking-wide'>{content}</p>
                     <p className='my-1 text-sm font-bold text-center font-serif capitalize'>- {author}
                         <span className='float-right mr-4'>

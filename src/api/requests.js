@@ -8,3 +8,21 @@ export const getRandomQuote = async () => {
         return error?.response
     }
 }
+
+export const getTags = async () => {
+    try {
+        const response = await axios.get('/tags')
+        return response
+    } catch (error) {
+        return error?.response
+    }
+}
+
+export const getRandomQuoteWithTags = async (tags) => {
+    try {
+        const response = await axios.get(`/random?tags=${tags}`)
+        return response
+    } catch (error) {
+        return error?.response
+    }
+}
