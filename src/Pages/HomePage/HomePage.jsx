@@ -7,11 +7,11 @@ import NextQuote from './Components/NextQuote'
 import QuoteDiv from './Components/QuoteDiv'
 
 const HomePage = () => {
-  const { quote, author } = useSelector(state => state.quote)
+  const { id, content, author } = useSelector(state => state.quote)
   const dispatch = useDispatch()
-  
+
   useEffect(() => {
-    !quote && getdata()
+    !content && getdata()
   }, [])
 
   const getdata = async () => {
@@ -19,15 +19,16 @@ const HomePage = () => {
     const response = await getRandomQuote()
     if (response?.status === 200) {
       dispatch(setQuote({
-        quote: response?.data?.content,
+        id: response?.data?._id,
+        content: response?.data?.content,
         author: response?.data?.author
       }))
     }
   }
   return (
     <div className='grid place-items-center'>
-      <QuoteDiv quote={quote} author={author} />
-      <NextQuote quote={quote} getdata={getdata} />
+      <QuoteDiv id={id} content={content} author={author} />
+      <NextQuote content={content} getdata={getdata} />
     </div>
   )
 }
