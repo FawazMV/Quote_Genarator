@@ -11,6 +11,5 @@ The project is deployed at  https://643ea8bb5adc1d0098f42ef3--magnificent-gnome-
 
 The API endpoint for this project is at https://api.quotable.io.
 
-
-![Home page](https://github.com/FawazMV/Quote_Genarator/blob/master/src/assets/website.jpeg "Home page")![image](https://user-images.githubusercontent.com/112040426/232809085-b49a4580-3ea5-4abc-9a5c-9ac41c695676.png)
+![image](https://user-images.githubusercontent.com/112040426/232809085-b49a4580-3ea5-4abc-9a5c-9ac41c695676.png)
 
